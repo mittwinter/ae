@@ -1,2 +1,6 @@
 .*.swp
 *.o
+ex-1-p1/bench
+ex-1-p1/bench-const
+ex-1-p1/bench-sf
+ex-1-p1/bench-std
