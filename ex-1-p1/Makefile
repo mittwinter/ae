@@ -21,9 +21,7 @@ LDFLAGS =
 	
 
 clean:
-	rm -f *.o gui/*.o protocol/*.o protocol/generator/*.o protocol/parser/*.o server/*.o posix/*.o p2p/*.o
+	rm -f *.o
 
 distclean: clean
 	rm -f $(targets)
-	( cd gui && $(MAKE) distclean )
-	( cd server && $(MAKE) distclean )
