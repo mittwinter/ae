@@ -2,8 +2,8 @@
  * Released under the terms of LGPL v3 (http://www.gnu.org/licenses/lgpl-3.0.txt).
  */
 #pragma once
-#ifndef CONST_VECTOR_HPP
-#define CONST_VECTOR_HPP
+#ifndef VECTOR_CONST_HPP
+#define VECTOR_CONST_HPP
 
 #include <cassert>
 #include <stdint.h>
