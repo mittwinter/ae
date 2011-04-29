@@ -37,7 +37,6 @@ template< typename T > class vector_const {
 				toCopy = 0;
 			}
 		}
-
 		void pop_back() { --used; }
 
 		T const &get(size_type p) const {
