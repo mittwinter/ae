@@ -6,10 +6,13 @@
 #define VECTOR_CONST_HPP
 
 #include <cassert>
+#include <stddef.h> // size_t
 #include <stdint.h>
 
 template< typename T > class vector_const {
 	public:
+		typedef size_t size_type;
+
 		vector_const() : capacity(1), used(0), toCopy(0), container(new T[1]), nextContainer(new T[2 * 1]) {}
 		virtual ~vector_const() {
 			delete[] container;
@@ -37,20 +40,21 @@ template< typename T > class vector_const {
 
 		void pop_back() { --used; }
 
-		T const &get(uint64_t p) const {
+		T const &get(size_type p) const {
 			assert(p < used);
 			return container[p];
 		}
-		void set(uint64_t p, T const &e) {
+		void set(size_type p, T const &e) {
 			assert(p < size);
 			container[p] = e;
 		}
-		uint64_t size() const { return used; }
+		size_type size() const { return used; }
 
 	protected:
-		uint64_t capacity;
-		uint64_t used;
-		uint64_t toCopy;
+		size_type capacity;
+		size_type used;
+		size_type toCopy;
+
 		T *container;
 		T *nextContainer;
 };
