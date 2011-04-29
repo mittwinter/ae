@@ -23,8 +23,10 @@ template< typename T > class vector_const {
 			assert(toCopy <= used);
 			assert(used < capacity);
 			// Incrementally copy elements from container to nextContainer:
-			nextContainer[toCopy] = container[toCopy];
-			++toCopy;
+			if(toCopy <= (used - 1)) {
+				nextContainer[toCopy] = container[toCopy];
+				++toCopy;
+			}
 			// Actually push back new element to both containers:
 			container[used] = e;
 			nextContainer[used] = e;
