@@ -38,7 +38,7 @@ template< typename T > class vector_const {
 		void pop_back() { --used; }
 
 		T const &get(uint64_t p) const {
-			assert(p <= used);
+			assert(p < used);
 			return container[p];
 		}
 		void set(uint64_t p, T const &e) {
