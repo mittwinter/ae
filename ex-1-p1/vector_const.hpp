@@ -45,7 +45,7 @@ template< typename T > class vector_const {
 			assert(p < size);
 			container[p] = e;
 		}
-		uint64_t size() const { return capacity; }
+		uint64_t size() const { return used; }
 
 	protected:
 		uint64_t capacity;
