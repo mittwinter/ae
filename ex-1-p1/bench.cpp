@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 			std::cerr << "getrusage() failed." << std::endl;
 			return EXIT_FAILURE;
 		}
-		std::vector<int> v;
+		std::vector< int > v;
 		for(unsigned int i = 0; i < NUMBER_OF_RUNS; i++) {
 			v.push_back(i);
 		}
@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 			std::cerr << "getrusage() failed." << std::endl;
 			return EXIT_FAILURE;
 		}
-		vec_array<int> v;
+		vec_array< int > v;
 		for(unsigned int i = 0; i < NUMBER_OF_RUNS; i++) {
 			v.push_back(i);
 		}
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 			std::cerr << "getrusage() failed." << std::endl;
 			return EXIT_FAILURE;
 		}
-		vec_alloc<int> v;
+		vec_alloc< int > v;
 		for(unsigned int i = 0; i < NUMBER_OF_RUNS; i++) {
 			v.push_back(i);
 		}
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 			std::cerr << "getrusage() failed." << std::endl;
 			return EXIT_FAILURE;
 		}
-		vec_realloc<int> v;
+		vec_realloc< int > v;
 		for(unsigned int i = 0; i < NUMBER_OF_RUNS; i++) {
 			v.push_back(i);
 		}
