@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) {
 			std::cerr << "getrusage() failed." << std::endl;
 			return EXIT_FAILURE;
 		}
-		vec_realloc<int> v;
+		vector_const< int > v;
 		for(unsigned int i = 0; i < NUMBER_OF_RUNS; i++) {
 			v.push_back(i);
 		}
