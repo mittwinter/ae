@@ -7,7 +7,7 @@
 #include "vector-sf.h"
 #include "vector_const.hpp"
 
-const unsigned int NUMBER_OF_RUNS = 10 * 1000 * 1000;
+const unsigned int NUMBER_OF_RUNS = 100 * 1000 * 1000;
 
 int main(int argc, char *argv[]) {
 	/*** std::vector ***/
