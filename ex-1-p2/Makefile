@@ -1,4 +1,4 @@
-TARGETS = bench
+TARGETS = bench bench_tlsf
 SUBDIRS = contrib/tlsf
 INCLUDES = -I./contrib/tlsf/
 
@@ -8,6 +8,10 @@ all: $(TARGETS)
 	done
 
 bench: bench.o \
+	tlsf_util.o \
+	contrib/tlsf/tlsf.o
+
+bench_tlsf: bench_tlsf.o \
 	tlsf_util.o \
 	contrib/tlsf/tlsf.o
 
