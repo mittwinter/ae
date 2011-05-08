@@ -11,7 +11,7 @@ namespace tlsf {
 
 class Util {
 	public:
-		static size_t const TLSF_POOL_SIZE = 1 * 1024 * 1024 * 1024; // Bytes = 2 GiB
+		static size_t const TLSF_POOL_SIZE = 3 * 1024 * 1024 * 1024UL; // Bytes = 3 GiB
 
 		static void init();
 		static void destroy();
